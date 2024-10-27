@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Time tracking dashboard</title>
+  <link rel="stylesheet" href="/app/css/style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { 
+      font-size: 11px; 
+      text-align: center; 
+      background-color: white; 
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+    }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main>
+    <div class="wraper">
+      <section class="profile card br-m">
+        <article class="profile__top br-s">
+          <picture>
+            <img class="profile__img" src="/images/image-jeremy.png" alt="">
+          </picture>
+          <div class="profile__info">
+            <p>Report for</p>
+            <p class="profile__username">Jeremy Robson</p>
+          </div>
+        </article>
+        <div class="profile__btns">
+          <button class="profile__btn day">Daily</button>
+          <button class="profile__btn week active">Weekly</button>
+          <button class="profile__btn month">Monthly</button>
+        </div>
+      </section>
+
+      <section class="activity cards">
+        <article class="card work br-l">
+          <!-- need pending -->
+           <picture class="card-imgs">
+            <img class="card__img" src="/images/icon-work.svg" alt="work-icon">
+           </picture>
+
+           <!-- The content seems be too redundant -->
+           <div class="card__content p-m br-m">
+
+            <div class="content-wraper">
+              <div class="content-wraper-info content-wraper-child">
+                <p class="title">Work</p>
+                <img src="/images/icon-ellipsis.svg" alt="dot">
+              </div>
+              <div class="content-wraper-time content-wraper-child">
+                <p class="hours">32hrs</p>
+                <p class="previous-hours">Last Week - 36hrs</p>
+              </div>
+            </div>
+           </div>
+        </article>
+
+        <article class="card play br-l">
+          <!-- need pending -->
+           <picture class="card-imgs">
+            <img class="card__img" src="/images/icon-play.svg" alt="work-icon">
+           </picture>
+
+           <!-- The content seems be too redundant -->
+           <div class="card__content p-m br-m">
+
+            <div class="content-wraper">
+              <div class="content-wraper-info content-wraper-child">
+                <p class="title">Play</p>
+                <img src="/images/icon-ellipsis.svg" alt="dot">
+              </div>
+              <div class="content-wraper-time content-wraper-child">
+                <p class="hours">10hrs</p>
+                <p>Last Week - 8hrs</p>
+              </div>
+            </div>
+           </div>
+        </article>
+
+        <!-- study component -->
+        <article class="card study br-l">
+          <!-- need pending -->
+           <picture class="card-imgs">
+            <img class="card__img" src="/images/icon-study.svg" alt="study-icon">
+           </picture>
+
+           <!-- The content seems be too redundant -->
+           <div class="card__content p-m br-m">
+
+            <div class="content-wraper">
+              <div class="content-wraper-info content-wraper-child">
+                <p class="title">Study</p>
+                <img src="/images/icon-ellipsis.svg" alt="dot">
+              </div>
+              <div class="content-wraper-time content-wraper-child">
+                <p class="hours">4hrs</p>
+                <p>Last Week - 7hrs</p>
+              </div>
+            </div>
+           </div>
+        </article>
+
+        <article class="card exercise br-l">
+          <!-- need pending -->
+           <picture class="card-imgs">
+            <img class="card__img" src="/images/icon-exercise.svg" alt="study-icon">
+           </picture>
+
+           <!-- The content seems be too redundant -->
+           <div class="card__content p-m br-m">
+
+            <div class="content-wraper">
+              <div class="content-wraper-info content-wraper-child">
+                <p class="title">Exercise</p>
+                <img src="/images/icon-ellipsis.svg" alt="dot">
+              </div>
+              <div class="content-wraper-time content-wraper-child">
+                <p class="hours">4hrs</p>
+                <p>Last Week - 5hrs</p>
+              </div>
+            </div>
+           </div>
+        </article>
+
+        <article class="card social br-l">
+          <!-- need pending -->
+           <picture class="card-imgs">
+            <img class="card__img" src="/images/icon-social.svg" alt="study-icon">
+           </picture>
+
+           <!-- The content seems be too redundant -->
+           <div class="card__content p-m br-m">
+
+            <div class="content-wraper">
+              <div class="content-wraper-info content-wraper-child">
+                <p class="title">Social</p>
+                <img src="/images/icon-ellipsis.svg" alt="dot">
+              </div>
+              <div class="content-wraper-time content-wraper-child">
+                <p class="hours">5hrs</p>
+                <p>Last Week - 10hrs</p>
+              </div>
+            </div>
+           </div>
+        </article>
+
+        <article class="card selfcare br-l">
+          <!-- need pending -->
+           <picture class="card-imgs">
+            <img class="card__img" src="/images/icon-self-care.svg" alt="study-icon">
+           </picture>
+
+           <!-- The content seems be too redundant -->
+           <div class="card__content p-m br-m">
+
+            <div class="content-wraper">
+              <div class="content-wraper-info content-wraper-child">
+                <p class="title">Self Care</p>
+                <img src="/images/icon-ellipsis.svg" alt="dot">
+              </div>
+              <div class="content-wraper-time content-wraper-child">
+                <p class="hours">2hrs</p>
+                <p>Last Week - 2hrs</p>
+              </div>
+            </div>
+           </div>
+        </article>
+        
+      </section>
+    </div>
+  </main> 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Ayan</a>.
+  </div>
+  <script src="/app/js/script.js"></script>
+</body>
+</html>
